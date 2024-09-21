@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Flores Amarillas</title> 
+  <style>
+        /* Estilos básicos para el cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Estilo para el botón */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: white; /* Fondo blanco */
+            color: black; /* Texto negro */
+            border: 2px solid black; /* Borde negro de 2px */
+            border-radius: 5px; /* Esquinas redondeadas */
+            cursor: pointer;
+            margin: 10px; /* Margen alrededor del botón */
+        }
+
+        /* Estilo para la imagen */
+        #flower-image {
+            display: none; /* Oculto al inicio */
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <h1>¡Si aceptas este regalo haz clic aquí!</h1> <!-- Botón que al hacer clic mostrará la imagen --> <button onclick="mostrarImagen()">🎁</button> <!-- Imagen de flores amarillas, oculta inicialmente --> 
+  <img id="flower-image" src="https://i.pinimg.com/736x/bd/e7/96/bde79696e91076fc20fd2210418fae53.jpg" alt="Flores amarillas"> 
+  <script>
+        // Función para mostrar la imagen
+        function mostrarImagen() {
+            var image = document.getElementById('flower-image');
+            image.style.display = 'block'; // Muestra la imagen
+        }
+    </script> 
+ 
+</body></html>
